@@ -11,11 +11,11 @@
 
 ;; as-apex-result is called on a successful invocation
 (define (as-apex-result v)
-  (list (cons (string->symbol "value") v)))
+  `((value . ,v)))
 
 ;; as-apex-error should be called when an error occurs
 (define (as-apex-error v)
-  (list (cons (string->symbol "error") v)))
+  `((error . ,v)))
 
 ;; apex-invoke accepts a procedure and a single request line
 ;; that is a string of JSON representing a single AWS Lambda invocation
