@@ -49,7 +49,7 @@
 (define (sum-func input)
   (let* ((json (read-json input))
          (nums (alist-ref 'numbers (alist-ref 'event json))))
-    (foldr + 0 (vector->list nums))))
+     (apply + (vector->list nums))))
 
 ;;
 ;; main - note that apex uses stdout for response data,
