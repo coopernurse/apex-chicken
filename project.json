@@ -1,0 +1,14 @@
+
+{
+  "name": "apex-chicken",
+  "description": "apex chicken demo",
+  "role": "arn:aws:iam::454738051317:role/apex_lambda_function",
+  "runtime": "golang",
+  "memory": 128,
+  "timeout": 5,
+  "hooks": {
+    "build": "build-chicken-apex.sh"
+  },
+  "defaultEnvironment": "dev",
+  "environment": {}
+}

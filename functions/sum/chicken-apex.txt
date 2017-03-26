@@ -1,0 +1,2 @@
+# eggs to include in build - space separated
+eggs="medea"
