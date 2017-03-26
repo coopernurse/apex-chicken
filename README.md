@@ -11,6 +11,10 @@ languages not supported natively by AWS to be used.
 
 This assumes you have `apex` installed and in your path.
 
+It also assumes you're on a Linux x86_64 machine, as there's no cross compilation
+support yet. PRs to fix that would be appreciated.
+
+
 ```
 # (1) copy build-chicken-apex.sh to some dir in your PATH
 $ cd apex-chicken
